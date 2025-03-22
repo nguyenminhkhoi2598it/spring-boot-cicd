@@ -14,6 +14,11 @@ public class CicdDemoApplication {
 		return "Hi, it's CI/CD";
 	}
 
+	@GetMapping("/say")
+	public String say() {
+		return "Nothing to say";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(CicdDemoApplication.class, args);
 	}
